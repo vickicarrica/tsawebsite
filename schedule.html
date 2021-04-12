@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Medical Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bod">
+<nav class = "navbar">
+        <div class = "navbar__container">
+        <a href="#home" id="navbar__logo">
+        <img src="https://media.discordapp.net/attachments/828080116625309736/830528214912598067/Untitled_Artwork_91.PNG?width=804&height=603" alt="logo" style="width:110.5px;height:83px;">
+        <b>MediComm</b></a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div> 
+            <ul class="navbar__menu">
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">Schedule your <span>appointment</span></h1>
+            <p class="hero__description">Complete the following form to be put in contact with a medical professional.</p>
+        </div>
+    </div>
+
+    <form class = "scheduling__form" action = "results.html" action = "GET" enctype="multipart/form-data">
+        <div>
+        <label for="fname">First Name*</label>
+        <input type="text" name="First Name" id="fname" required>
+        </div>
+        <div>
+        <label for = "mname">Middle Name</label>
+        <input type="text" name="Middle Name" id="mname">
+        </div>
+        <div>
+        <label for = "lname">Last Name*</label>
+        <input type="text" name="Last Name" id="lname" required>
+        </div>
+        <div>
+        <label for="email">Email*</label>
+        <input type="email" name = "Email" id="email" required>
+        </div>
+        <div>
+        <label for="age">Age*</label>
+        <input type="number" name = "Age" id="age" min="1" max="150" required>
+        </div>
+        Gender:
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="Gender" id = "male" value="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="Gender" id = "female" value="female">
+            </div>
+            <div>
+                <label for="other">Other</label>
+                <input type="radio" name="Gender" id = "other" value="other">
+            </div>
+
+        Check Applicable Symptoms*:
+            <div>
+                <label for="fever">Fever</label>
+                <input type="checkbox" name="Fever" id = "fever">
+            </div>
+            <div>
+                <label for="chills">Chills</label>
+                <input type="checkbox" name="Chills" id = "chills">
+            </div>
+            <div>
+                <label for="fatigue">Fatigue</label>
+                <input type="checkbox" name="Fatigue" id = "fatique">
+            </div>
+            <div>
+                <label for="cough">Cough</label>
+                <input type="checkbox" name="Cough" id = "cough">
+            </div>
+            <div>
+                <label for="sThroat">Sore Throat</label>
+                <input type="checkbox" name="Sore Throat" id = "sThroat">
+            </div>
+            <div>
+                <label for="rNose">Runny Nose</label>
+                <input type="checkbox" name="Runny Nose" id = "rNose">
+            </div>
+            <div>
+                <label for="nausea">Nausea</label>
+                <input type="checkbox" name="Nausea" id = "nausea">
+            </div>
+            <div>
+                <label for="dizziness">Dizziness</label>
+                <input type="checkbox" name="Dizziness" id = "dizziness">
+            </div>
+            <div>
+                <label for="dBreathing">Difficulty Breathing</label>
+                <input type="checkbox" name="Difficulty Breathing" id = "dBreathing">
+            </div>
+            <div>
+                <label for="hBreathing">Heavy Breathing</label>
+                <input type="checkbox" name="Heavy Breathing" id = "hBreathing">
+            </div>
+            <div>
+                <label for="cPain">Chest Pain</label>
+                <input type="checkbox" name="Chest Pain" id = "cPain">
+            </div>
+            <div>
+                <label for="tiChest">Tightness in Chest</label>
+                <input type="checkbox" name="Chest Tightness" id = "tiChest">
+            </div>
+            <div>
+                <label for="hPalpitations">Heart Palpitations</label>
+                <input type="checkbox" name="Heart Palpitations" id = "hPalpitations">
+            </div>
+            <div>
+                <label for="dMoving">Difficulty Moving</label>
+                <input type="checkbox" name="Difficulty Moving" id = "dMoving">
+            </div>
+            <div>
+                <label for="jPain">Joint Pain</label>
+                <input type="checkbox" name="Joint Pain" id = "jPain">
+            </div>
+            <div>
+                <label for="swelling">Swelling</label>
+                <input type="checkbox" name="Swelling" id = "swelling">
+            </div>
+            <div>
+                <label for="abPain">Abdominal Pain</label>
+                <input type="checkbox" name="Abdominal Pain" id = "abPain">
+            </div>
+            <div>
+                <label for="hAches">Headaches</label>
+                <input type="checkbox" name="Headaches" id = "hAches">
+            </div>
+            <div>
+                <label for="migraines">Migraines</label>
+                <input type="checkbox" name="Migraines" id = "migraines">
+            </div>
+            <div>
+                <label for="amnesia">Amnesia</label>
+                <input type="checkbox" name="Amnesia" id = "amnesia">
+            </div>
+            <div>
+                <label for="rash">Rash</label>
+                <input type="checkbox" name="Rash" id = "rash">
+            </div>
+            <div>
+                <label for="eczema">Eczema</label>
+                <input type="checkbox" name="Eczema" id = "eczema">
+            </div>
+            <div>
+                <label for="burn">Burn</label>
+                <input type="checkbox" name="Burn" id = "burn">
+            </div>
+            <div>
+                <label for="eRedness">Eye Redness</label>
+                <input type="checkbox" name="Eye Redness" id = "eRedness">
+            </div>
+            <div>
+                <label for="iEyes">Itchy Eyes</label>
+                <input type="checkbox" name="Itchy Eyes" id = "iEyes">
+            </div>
+            <div>
+                <label for="bPain">Breast Pain</label>
+                <input type="checkbox" name="Breat Pain" id = "bPain">
+            </div>
+            <div>
+                <label for="mIssues">Menstruation Issues</label>
+                <input type="checkbox" name="Menstruation Issues" id = "mIssues">
+            </div>
+            <div>
+                <label for="pIssues">Pregnancy Issues</label>
+                <input type="checkbox" name="Pregnancy Issues" id = "pIssues">
+            </div>
+
+
+        <div>
+        <label for="onlineOption">Would you like an online or in person appointment?</label>
+        <select name="onlineOption" id="onlineOption">
+            <option value="Online">Online</option>
+            <option value="In-person">In Person</option>
+        </select>
+        </div>
+        <div>
+        <label for="availability">Appointment Date*</label>
+        <input type="date" name = "Availability" id="availability"required>
+        </div>
+        <div>
+        <label for="zip">Zip Code</label>
+        <input type="number" name="Zip Code" id="zip" min="0" max="99999">
+        </div>
+        <div>
+        <label for="img">Insert Any Relevant Images</label>
+        <input type="file" name="Image" id="img">
+        </div>
+        <div>
+        <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+
+
+<script src="app.js"></script>
+</body>
+</html>
