@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Results</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="bod">
+<nav class = "navbar">
+        <div class = "navbar__container">
+        <a href="#home" id="navbar__logo">
+        <img src="https://media.discordapp.net/attachments/828080116625309736/830528214912598067/Untitled_Artwork_91.PNG?width=804&height=603" alt="logo" style="width:110.5px;height:83px;">
+        <b>MediComm</b></a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div> 
+            <ul class="navbar__menu">
+            </ul>
+        </div>
+    </nav>
+    <div class="results__text">
+    <h2>Thank you for your submission!</h2>
+    <p>Your TSA Medicomm request has been sent in. Please look for a response via email within the next 48 hours. If your medical concern is an emergency, please call 911 or reach out to your local urgent care center.</p>
+    <p> </p>
+    <p><b>Your answers:</b></p>
+    
+    <div id="results"></div>
+    
+    <script>
+    const resultsList = document.getElementById('results')
+    
+    new URLSearchParams(window.location.search).forEach((value, name) => {
+     resultsList.append(name + ': ' + value)
+     resultsList.append(document.createElement('br'))
+	})
+    </script>
+    <a class="backtoform" href="schedule.html">Back to form</a>
+    <p><br>If you have any issues, email us at tsamedicomm@gmail.com</p>
+    </div>
+</body>
+</html>
